@@ -41,8 +41,8 @@ docker-compose exec web python manage.py loaddata fixtures/initial_data.json
 ```bash
 docker-compose exec web python manage.py createsuperuser
 ```
-username: admin 
-password: admin123
+- username: admin 
+- password: admin123
 ---
 ### 6. Halaman Login Admin
 Buka di browser:
