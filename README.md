@@ -22,7 +22,34 @@ docker-compose up -d --build
 ```
 
 ---
+### 3. Migration Database
 
+```bash
+docker-compose exec web python manage.py migrate
+```
+
+---
+### 4. Load Initial Data (Fixtures)
+
+```bash
+docker-compose exec web python manage.py loaddata fixtures/initial_data.json
+```
+
+---
+### 5. Membuat Superuser
+
+```bash
+docker-compose exec web python manage.py createsuperuser
+```
+username: admin 
+password: admin123
+---
+### 5. Akses Djangon Admin
+Buka di browser:
+```bash
+http://localhost:8000/admin
+```
+---
 ## 📁 Project Structure
 
 ```bash
