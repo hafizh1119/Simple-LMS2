@@ -145,6 +145,3 @@ simple-lms2/
 * **README.md** → Dokumentasi project
 
 ```
-```
-
-```
