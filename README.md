@@ -20,7 +20,7 @@ git clone https://github.com/hafizh1119/simple-lms2
 ```bash
 docker-compose up -d --build
 ```
-
+![login](Dokumentasi/login.png)
 ---
 ### 3. Migration Database
 
