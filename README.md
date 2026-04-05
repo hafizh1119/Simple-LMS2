@@ -76,9 +76,6 @@ run()
 ## 📁 Project Structure
 
 ```bash
-## 📁 Project Structure
-
-```bash
 simple-lms2/
 ├── config/
 │   ├── __pycache__/
