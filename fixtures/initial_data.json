@@ -1,0 +1,119 @@
+[
+  {
+    "model": "courses.user",
+    "pk": 1,
+    "fields": {
+      "username": "instructor1",
+      "password": "pbkdf2_sha256$600000$dummy",
+      "role": "instructor",
+      "is_active": true
+    }
+  },
+  {
+    "model": "courses.user",
+    "pk": 2,
+    "fields": {
+      "username": "student1",
+      "password": "pbkdf2_sha256$600000$dummy",
+      "role": "student",
+      "is_active": true
+    }
+  },
+
+  {
+    "model": "courses.category",
+    "pk": 1,
+    "fields": {
+      "name": "Programming",
+      "parent": null
+    }
+  },
+
+  {
+    "model": "courses.course",
+    "pk": 1,
+    "fields": {
+      "title": "Django Basics",
+      "description": "Learn Django",
+      "instructor": 1,
+      "category": 1
+    }
+  },
+  {
+    "model": "courses.course",
+    "pk": 2,
+    "fields": {
+      "title": "Advanced Django",
+      "description": "Deep dive",
+      "instructor": 1,
+      "category": 1
+    }
+  },
+
+  {
+    "model": "courses.lesson",
+    "pk": 1,
+    "fields": {
+      "course": 1,
+      "title": "Intro",
+      "content": "...",
+      "order": 1
+    }
+  },
+  {
+    "model": "courses.lesson",
+    "pk": 2,
+    "fields": {
+      "course": 1,
+      "title": "Models",
+      "content": "...",
+      "order": 2
+    }
+  },
+  {
+    "model": "courses.lesson",
+    "pk": 3,
+    "fields": {
+      "course": 2,
+      "title": "ORM",
+      "content": "...",
+      "order": 1
+    }
+  },
+
+  {
+    "model": "courses.enrollment",
+    "pk": 1,
+    "fields": {
+      "student": 2,
+      "course": 1
+    }
+  },
+  {
+    "model": "courses.enrollment",
+    "pk": 2,
+    "fields": {
+      "student": 2,
+      "course": 2
+    }
+  },
+
+  {
+    "model": "courses.progress",
+    "pk": 1,
+    "fields": {
+      "student": 2,
+      "lesson": 1,
+      "completed": true
+    }
+  },
+  {
+    "model": "courses.progress",
+    "pk": 2,
+    "fields": {
+      "student": 2,
+      "lesson": 2,
+      "completed": false
+    }
+  }
+]
