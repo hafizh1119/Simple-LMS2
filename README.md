@@ -152,5 +152,3 @@ simple-lms2/
 * **manage.py** → Command-line Django
 * **requirements.txt** → Dependencies project
 * **README.md** → Dokumentasi project
-
-```
