@@ -80,6 +80,7 @@ lalu:
 from courses.scripts.query_demo import run
 run()
 ```
+![login](Dokumentasi/query_optimization.png)
 ---
 ## 📁 Project Structure
 
