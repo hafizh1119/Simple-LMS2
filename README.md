@@ -36,7 +36,7 @@ docker-compose exec web python manage.py migrate
 docker-compose exec web python manage.py loaddata fixtures/initial_data.json
 ```
 
-![login](Dokumentasi/initial_data.png)
+![login](Dokumentasi/Initial_data.png)
 ---
 ### 5. Membuat Superuser
 
